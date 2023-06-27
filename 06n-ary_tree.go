@@ -1,12 +1,10 @@
-// ! https://leetcode.com/problems/n-ary-tree-preorder-traversal/
-// ! https://leetcode.com/problems/n-ary-tree-postorder-traversal/
 package main
 
 type Node struct {
 	Val      int
 	Children []*Node
 }
-
+// ! https://leetcode.com/problems/n-ary-tree-postorder-traversal/
 func postorder(root *Node) []int {
 	ans := []int{}
 	if root == nil {
@@ -26,7 +24,7 @@ func getPostOrderTraversalForNaryTree(node *Node, ans []int) []int {
 	}
 	return ans
 }
-
+// ! https://leetcode.com/problems/n-ary-tree-preorder-traversal/
 func preorder(root *Node) []int {
 	ans := []int{}
 	if root == nil {

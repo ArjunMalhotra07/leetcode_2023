@@ -1,5 +1,3 @@
-//! https://leetcode.com/problems/binary-tree-inorder-traversal/ 
-//! https://leetcode.com/problems/merge-two-binary-trees/
 package main
 
 type TreeNode struct {
@@ -7,7 +5,7 @@ type TreeNode struct {
 	Left  *TreeNode
 	Right *TreeNode
 }
-
+//! https://leetcode.com/problems/binary-tree-inorder-traversal/ 
 func inorderTraversal(root *TreeNode) []int {
 	ans := []int{}
 	if root == nil {
@@ -26,7 +24,7 @@ func returnInOrderTraversal(node *TreeNode, ans []int) []int {
 	}
 	return ans
 }
-
+//! https://leetcode.com/problems/merge-two-binary-trees/
 func mergeTrees(root1 *TreeNode, root2 *TreeNode) *TreeNode {
 	return mergeTreesHelperFunc(root1, root2)
 }
