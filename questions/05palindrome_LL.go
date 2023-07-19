@@ -1,5 +1,5 @@
 // ! https://leetcode.com/problems/palindrome-linked-list/description/
-package main
+package questions
 
 /**
  * Definition for singly-linked list.
@@ -17,7 +17,7 @@ func Pop() {
 	n := len(stack) - 1
 	stack = stack[:n]
 }
-func isPalindrome(head *ListNode) bool {
+func IsPalindrome(head *ListNode) bool {
 	one := head
 	two := head
 	for two != nil && two.Next != nil {

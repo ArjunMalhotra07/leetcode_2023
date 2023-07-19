@@ -1,7 +1,7 @@
 //! https://leetcode.com/problems/pascals-triangle/description/
-package main
+package questions
 
-func generate(numRows int) [][]int {
+func Generate(numRows int) [][]int {
 	ans := make([][]int, numRows)
 	for i := 0; i < numRows; i++ {
 		row := make([]int, i+1)

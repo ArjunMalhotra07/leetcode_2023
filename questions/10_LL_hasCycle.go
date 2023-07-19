@@ -1,4 +1,4 @@
-package main
+package questions
 
 /**
  * Definition for singly-linked list.
@@ -7,10 +7,10 @@ package main
  *     Next *ListNode
  * }
  */
-func hasCycle(head *ListNode) bool {
-	return hasCycleHelperFunction(head)
+func HasCycle(head *ListNode) bool {
+	return HasCycleHelperFunction(head)
 }
-func hasCycleHelperFunction(head *ListNode) bool {
+func HasCycleHelperFunction(head *ListNode) bool {
 	slow := head
 	fast := head
 	//! Check if Linked List is Empty or Linked List is just 1 Element long return false as no ring can be made

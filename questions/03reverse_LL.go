@@ -1,12 +1,12 @@
 // ! https://leetcode.com/problems/reverse-linked-list/
-package main
+package questions
 
 type ListNode struct {
 	Val  int
 	Next *ListNode
 }
 
-func reverseList(head *ListNode) *ListNode {
+func ReverseList(head *ListNode) *ListNode {
 
 	var prev, next *ListNode
 	curr := head

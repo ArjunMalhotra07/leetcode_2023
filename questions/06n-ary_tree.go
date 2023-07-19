@@ -1,22 +1,22 @@
-package main
+package questions
 
 type Node struct {
 	Val      int
 	Children []*Node
 }
 // ! https://leetcode.com/problems/n-ary-tree-postorder-traversal/
-func postorder(root *Node) []int {
+func Postorder(root *Node) []int {
 	ans := []int{}
 	if root == nil {
 		return ans
 	}
-	ans = getPostOrderTraversalForNaryTree(root, ans)
+	ans = GetPostOrderTraversalForNaryTree(root, ans)
 	return ans
 }
-func getPostOrderTraversalForNaryTree(node *Node, ans []int) []int {
+func GetPostOrderTraversalForNaryTree(node *Node, ans []int) []int {
 	if len(node.Children) != 0 {
 		for i := 0; i < len(node.Children); i++ {
-			ans = getPostOrderTraversalForNaryTree(node.Children[i], ans)
+			ans = GetPostOrderTraversalForNaryTree(node.Children[i], ans)
 		}
 	}
 	if node != nil {
@@ -25,21 +25,21 @@ func getPostOrderTraversalForNaryTree(node *Node, ans []int) []int {
 	return ans
 }
 // ! https://leetcode.com/problems/n-ary-tree-preorder-traversal/
-func preorder(root *Node) []int {
+func Preorder(root *Node) []int {
 	ans := []int{}
 	if root == nil {
 		return ans
 	}
-	ans = getPreOrderTraversalForNaryTree(root, ans)
+	ans = GetPreOrderTraversalForNaryTree(root, ans)
 	return ans
 }
-func getPreOrderTraversalForNaryTree(node *Node, ans []int) []int {
+func GetPreOrderTraversalForNaryTree(node *Node, ans []int) []int {
 	if node != nil {
 		ans = append(ans, node.Val)
 	}
 	if len(node.Children) != 0 {
 		for i := 0; i < len(node.Children); i++ {
-			ans = getPreOrderTraversalForNaryTree(node.Children[i], ans)
+			ans = GetPreOrderTraversalForNaryTree(node.Children[i], ans)
 		}
 	}
 	return ans
