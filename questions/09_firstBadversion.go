@@ -1,8 +1,10 @@
 package questions
 
-func IsBadVersion(version int) bool
+func IsBadVersion(version int) bool {
+	return false
+}
 
-func firstBadVersion(n int) int {
+func FirstBadVersion(n int) int {
 	s := 0
 	e := n - 1
 	for s <= e {
