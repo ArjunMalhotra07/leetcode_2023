@@ -7,6 +7,7 @@ func CycleSortIterative(nums []int) []int {
 	for i < len(nums) {
 		correctIndex := nums[i] - 1
 		if nums[correctIndex] != nums[i] {
+			//! Swap 
 			temp := nums[i]
 			nums[i] = nums[correctIndex]
 			nums[correctIndex] = temp
