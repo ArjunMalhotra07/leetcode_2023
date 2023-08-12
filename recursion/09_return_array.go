@@ -13,4 +13,4 @@ func CheckForRepitition(nums, ans []int, index, target int) []int {
 }
 func CheckForRepititionHelper() {
 	fmt.Println(CheckForRepitition([]int{1, 2, 3, 10, 10, 5}, []int{}, 0, 10))
-}
+ }
